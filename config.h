@@ -1,4 +1,9 @@
+#ifndef CONFIG_H_
+#define CONFIG_H_
+
 #include "arduino_secrets.h"
+
+/*************************** Sketch Config *********************************/
 
 /************************ Adafruit IO Config *******************************/
 
@@ -69,3 +74,5 @@ AdafruitIO_WiFi io(IO_USERNAME, IO_KEY, WIFI_SSID, WIFI_PASS);
 // and comment out the AdafruitIO_WiFi client in the WIFI section
 // #include "AdafruitIO_Ethernet.h"
 // AdafruitIO_Ethernet io(IO_USERNAME, IO_KEY);
+
+#endif  // CONFIG_H_
