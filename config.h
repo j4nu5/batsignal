@@ -4,6 +4,11 @@
 #include "arduino_secrets.h"
 
 /*************************** Sketch Config *********************************/
+// Comment this to create a release build.
+#define DEBUG_BUILD 1
+
+// The name of the Adafruit IO feed we want to connect to.
+const char kInputFeedName[] = "batsignal";
 
 /************************ Adafruit IO Config *******************************/
 
