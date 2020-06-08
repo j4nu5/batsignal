@@ -10,6 +10,9 @@
 // The name of the Adafruit IO feed we want to connect to.
 const char kInputFeedName[] = "batsignal";
 
+// Pin number for the relay.
+const int kRelayOutputPin = 7;
+
 /************************ Adafruit IO Config *******************************/
 
 // visit io.adafruit.com if you need to create an account,
