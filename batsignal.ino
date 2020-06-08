@@ -103,6 +103,8 @@ void Log(const char * const line) {
 }
 
 void HandleMessage(AdafruitIO_Data *data) {
+  Logln("Received a notification");
+
   const char * const message = data->value();
   if (!IsMessageValid(message)) {
     return;
@@ -115,7 +117,7 @@ void HandleMessage(AdafruitIO_Data *data) {
   if (message[0] == '1') {
     TurnRelayOn();
   }
-  if (message[0] == '0') {
+  else if (message[0] == '0') {
     TurnRelayOff();
   }
 }
